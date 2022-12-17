@@ -1,44 +1,79 @@
-body{
+body {
     height: 100vh;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
+    /* font-family: sans-serif; */
 }
 
-.container{
+.container {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.calc-container{
+.calc-container {
     border: 5px solid black;
-    background-color: whitesmoke;
-    height: 700px;
-    width: 500px;
+    background-color: #9c27b0;
+    height: 690px;
+    width: 470px;
     padding: 10px;
 }
 
-.screen{
+.screen {
     border: 2px solid black;
     padding: 5px;
     height: 100px;
-    font-size: 24px;
     text-align: end;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
-.buttons-container{
-    margin: 20px 0px;
-    border: 2px solid black;
-    padding: 20px;
-    height: 500px;
-    /* font-size: 30px; */
-}
-
-button{
+.screen-input {
+    padding: 5px;
     font-size: 25px;
 }
 
-.equate-button{
+.screen-output {
+    padding: 5px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.buttons-container {
+    /* box-sizing: border-box; */
+    margin: 10px 0px;
+    border: 2px solid black;
+    padding: 20px 21px;
+    height: 520px;
+    font-size: 30px;
+    background-color: #e1f5fe;
+}
+
+button {
+    height: 80px;
+    width: 100px;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+button:hover,
+button:active {
+    background-color: #e7e7e7;
+    /* background-color: #555555; */
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.15);
+}
+
+.equate-button {
     background-color: deepskyblue;
     color: white;
+}
+
+.equate-button:hover {
+    background-color: deepskyblue;
 }
